@@ -4,7 +4,7 @@ stdenv.mkDerivation rec {
   version = "0.0.1";
 
   src = ./.;
-  buildInputs = [ stdenv cmake glfw3 ];
+  buildInputs = [ stdenv cmake glfw3 mesa_noglu ];
 
   installPhase = ''
     mkdir -p $out/bin
